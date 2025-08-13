@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  background-color: #add8e6;
 }
 
 .container {
@@ -12,16 +13,17 @@ body {
 
 .progress {
   margin: 1em auto;
-  width: 500px;
+  width: 540px;
   display: none;
 }
 
 .progressbar {
   position: relative;
-  width: 492px;
+  width: 100%;
   border: 1px solid black;
   padding: 3px;
   margin: 2px 0px;
+  background-color: #eaf8ff;
 }
 
 .progresstext {
@@ -41,9 +43,9 @@ body {
 .sorter {
   margin: 0px auto;
   display: grid;
-  grid-template-columns: 120px 1fr 120px;
+  grid-template-columns: 180px 1fr 180px;
   grid-gap: 5px;
-  width: 420px;
+  width: 540px;
 }
 
 .button {
@@ -52,6 +54,7 @@ body {
   padding: 10%;
   grid-column: 2 / 3;
   cursor: pointer;
+  background-color: #eaf8ff;
 }
 
 .starting.start.button {
@@ -66,6 +69,7 @@ body {
 .sorting.button, .finished.button {
   grid-row: span 2;
   display: none;
+  background-color: #eaf8ff;
 }
 
 .loading.button {
@@ -111,17 +115,20 @@ body {
 }
 
 .sorter > .image {
-  width: 120px;
-  height: 180px;
+  width: 180px;
+  height: 385px;
   margin: auto;
   grid-row: 1 / 7;
   cursor: pointer;
+  object-fit: cover;
+  background-color: #eaf8ff;
 }
 
 .sorter > .text {
-  width: 120px;
+  width: 180px;
   height: 60px;
   display: none;
+  background-color: #eaf8ff;
 }
 
 .sorter > .text > p {
